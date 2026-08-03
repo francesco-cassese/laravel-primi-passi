@@ -1,14 +1,44 @@
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Root - Variabili globali
+   ========================================================================== */
+
+:root {
+    --color-white: #ffffff;
+    --color-text-dark: #1f2937;
+    --color-text-body: #374151;
+    --color-header-bg: rgba(0, 0, 0, 0.65);
+    --color-main-bg: rgba(255, 255, 255, 0.88);
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ==========================================================================
+   Accessibilità - Skip link
+   ========================================================================== */
+
 .skip-link {
     position: absolute;
     left: -9999px;
     top: 0;
-    background-color: #ffffff;
-    color: #1f2937;
+    background-color: var(--color-white);
+    color: var(--color-text-dark);
     padding: 0.75rem 1rem;
     z-index: 10;
 }
@@ -18,8 +48,12 @@ body {
     top: 0.5rem;
 }
 
+/* ==========================================================================
+   Header / Navigazione
+   ========================================================================== */
+
 header {
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: var(--color-header-bg);
     padding: 1rem 2rem;
 }
 
@@ -29,7 +63,7 @@ header nav {
 }
 
 header nav a {
-    color: #ffffff;
+    color: var(--color-white);
     text-decoration: none;
     font-weight: bold;
 }
@@ -39,7 +73,7 @@ header nav a:hover {
 }
 
 header nav a:focus {
-    outline: 2px solid #ffffff;
+    outline: 2px solid var(--color-white);
     outline-offset: 3px;
 }
 
@@ -48,23 +82,31 @@ header nav a[aria-current="page"] {
     text-underline-offset: 4px;
 }
 
+/* ==========================================================================
+   Main content
+   ========================================================================== */
+
 main {
     max-width: 700px;
     margin: 4rem auto;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.88);
+    background-color: var(--color-main-bg);
     border-radius: 8px;
 }
 
 main h1 {
-    color: #1f2937;
+    color: var(--color-text-dark);
     margin-bottom: 1rem;
 }
 
 main p {
-    color: #374151;
+    color: var(--color-text-body);
     line-height: 1.6;
 }
+
+/* ==========================================================================
+   Background per pagina
+   ========================================================================== */
 
 body.bg-home {
     background-image: url('/images/home-bg.jpg');
