@@ -4,7 +4,7 @@ Progetto di esercizio per imparare le basi del **routing** in Laravel: definizio
 
 ## Obiettivi dell'esercizio
 
-- Creare un progetto Laravel 11 da zero
+- Creare un progetto Laravel da zero
 - Sostituire la view di benvenuto predefinita con una homepage personalizzata
 - Passare dati dalla rotta alla view e stamparli dinamicamente con Blade
 - **Bonus**: creare più pagine e un header con un menu di navigazione, generando i link con `route()`
