@@ -10,7 +10,7 @@
 <body>
 
     <h1>
-        Hello World!
+        {{ $titolo }}
     </h1>
 
 </body>
