@@ -43,6 +43,6 @@ L'app sarà disponibile su [http://localhost:8000](http://localhost:8000).
 
 ## Tecnologie
 
-- Laravel 11
+- Laravel 12
 - Blade templating
 - CSS puro (nessun framework, `public/css/style.css`)
