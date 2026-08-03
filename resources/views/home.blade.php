@@ -9,6 +9,8 @@
 
 <body>
 
+    @include('partials.header')
+
     <h1>
         {{ $titolo }}
     </h1>
