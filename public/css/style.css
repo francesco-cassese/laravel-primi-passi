@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background-color: #ffffff;
+    color: #1f2937;
+    padding: 0.75rem 1rem;
+    z-index: 10;
+}
+
+.skip-link:focus {
+    left: 0.5rem;
+    top: 0.5rem;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 1rem 2rem;
+}
+
+header nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav a:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
+}
+
+header nav a[aria-current="page"] {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+main {
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.88);
+    border-radius: 8px;
+}
+
+main h1 {
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+main p {
+    color: #374151;
+    line-height: 1.6;
+}
+
+body.bg-home {
+    background-image: url('/images/home-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-chi-siamo {
+    background-image: url('/images/chi-siamo-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.bg-contatti {
+    background-image: url('/images/contatti-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
