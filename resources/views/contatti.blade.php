@@ -13,6 +13,7 @@
     @include('partials.header')
 
     <main id="main-content">
+        {{-- Titolo e testo arrivano dalla rotta, non sono scritti qui --}}
         <h1>
             {{ $titolo }}
         </h1>
